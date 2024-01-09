@@ -90,3 +90,8 @@ INSERT INTO Pago (
 (1, 1, 500, 1500, 2000, 'Pago para cliente 1'),
 (2, 2, 700, 1300, 2000, 'Pago para cliente 2'),
 (3, 3, 800, 1200, 2000, 'Pago para cliente 3');
+
+ALTER TABLE Pago
+ CHANGE COLUMN Anticipo Abono INT
+
+ 
