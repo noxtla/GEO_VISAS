@@ -31,7 +31,7 @@ CREATE TABLE Pago (
   ID_Pago INT PRIMARY KEY,
   ID_Cliente INT,
     FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente),
-  Anticipo INT,
+  Abono INT,
   Remanente INT,
   Total_Costo INT,  
   Memo varchar(200)
