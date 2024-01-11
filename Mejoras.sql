@@ -1,0 +1,6 @@
+/*
+UPDATE PENDING
+Para mejorar la tabla podrias poner la llave primaria como auto incremental en todas las tablas
+
+Aun no entiendo bien la abstraccion mejor me espero
+*/
