@@ -27,15 +27,21 @@ CREATE TABLE Citas (
   )
 
 
-CREATE TABLE Pago (
+CREATE TABLE Pagos (
   ID_Pago INT PRIMARY KEY,
   ID_Cliente INT,
     FOREIGN KEY (ID_Cliente) REFERENCES Clientes(ID_Cliente),
   Abono INT,
   Remanente INT,
   Total_Costo INT,  
+  Fecha_Ultimo_Abono date,
   Memo varchar(200)
   )
+
+ALTER TABLE Pagos
+ADD Fecha_Ultimo_Abono date;
+
+UPDATE `geo_visas`.`PAGOS` SET `Fecha_Ultimo_Abono` = '2024-01-15' WHERE (`ID_Pago` = '1');
 
 ALTER TABLE Pago
  CHANGE COLUMN Anticipo Abono INT
